@@ -105,4 +105,4 @@
 
 //#let scr(it) = math.text(font: "KaTeX_Script")[#it #h(0.2em)]
 
-#let scr(it) = math.class("normal", text(font:"KaTeX_Script")[#it #h(0.29em)])
+#let scr(it) = math.class("normal", text(font:"KaTeX_Script")[#it #h(0.05em)])
