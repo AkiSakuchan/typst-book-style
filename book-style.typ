@@ -1,4 +1,4 @@
-#let NotoSongti = "Noto Serif SC"
+#let NotoSongti = "Noto Serif CJK SC"
 #let LatinFont = "New Computer Modern"
 
 #let book(
@@ -105,4 +105,4 @@
 
 //#let scr(it) = math.text(font: "KaTeX_Script")[#it #h(0.2em)]
 
-#let scr(it) = math.class("normal", text(font:"KaTeX_Script")[#it #h(0.05em)])
+//#let scr(it) = math.class("normal", text(font:"KaTeX_Script")[#it #h(0.05em)])
