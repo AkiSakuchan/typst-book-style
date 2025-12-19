@@ -1,4 +1,4 @@
-#let NotoSongti = "Noto Serif CJK SC"
+#let NotoSongti = "Noto Serif SC"
 #let LatinFont = "New Computer Modern"
 
 #let book(
@@ -9,6 +9,7 @@
   bib-file: none,
   body
 )={
+  import "@preview/i-figured:0.2.4"
   set page(paper: paper-size)
 
   //标题样式
@@ -67,12 +68,14 @@
     counter(math.equation).update(0) // 每次显示二级标题就更新一次公式计数器
     it
   }
-  set math.equation(numbering: n => {
-    let section-counter = counter(heading).get()
-    numbering("(1.1.1)", 
-    section-counter.first(),
-    section-counter.at(1, default: 0), n)
-  })
+  
+  // set math.equation(numbering: n => {
+  //   let section-counter = counter(heading).get()
+  //   numbering("(1.1.1)", 
+  //   section-counter.first(),
+  //   section-counter.at(1, default: 0), n)
+  // })
+  show math.equation: i-figured.show-equation.with(only-labeled: true,level: 2)
 
   //show math.equation: set text(lang:"zh", font: (LatinFont, NotoSongti))
 
