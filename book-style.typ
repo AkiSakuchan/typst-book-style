@@ -1,4 +1,4 @@
-#let NotoSongti = "Noto Serif SC"
+#let NotoSongti = "Noto Serif CJK SC"
 #let LatinFont = "New Computer Modern"
 
 #let book(
